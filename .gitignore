@@ -1,0 +1,21 @@
+# ocaml files
+_build
+*.cmo
+*.cmi
+*.cma
+*.cmax
+setup.log
+setup.data
+*.native
+*.byte
+*.out
+
+#pa_debug files
+log.txt
+
+# vim files
+*~
+*.swp
+
+# mac files
+.DS_Store
