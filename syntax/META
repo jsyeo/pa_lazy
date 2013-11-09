@@ -1,0 +1,10 @@
+# OASIS_START
+# DO NOT EDIT (digest: 968b5d0f910d8505c1ddc7c925a18999)
+version = "0.01"
+description = "Syntax extension for laziness"
+requires = "compiler-libs.common camlp4"
+archive(syntax, preprocessor) = "pa_lazy_syntax.cma"
+archive(syntax, toploop) = "pa_lazy_syntax.cma"
+exists_if = "pa_lazy_syntax.cma"
+# OASIS_STOP
+

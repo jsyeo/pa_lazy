@@ -1,0 +1,20 @@
+# OASIS_START
+# DO NOT EDIT (digest: 5cf36884ddf77bf708c120434b6d7b2f)
+version = "0.01"
+description = "Lazy extension"
+requires = "camlp4.lib"
+archive(byte) = "pa_lazy.cma"
+archive(byte, plugin) = "pa_lazy.cma"
+archive(native) = "pa_lazy.cmxa"
+archive(native, plugin) = "pa_lazy.cmxs"
+exists_if = "pa_lazy.cma"
+package "syntax" (
+ version = "0.01"
+ description = "Syntax extension for laziness"
+ requires = "compiler-libs.common camlp4"
+ archive(syntax, preprocessor) = "pa_lazy_syntax.cma"
+ archive(syntax, toploop) = "pa_lazy_syntax.cma"
+ exists_if = "pa_lazy_syntax.cma"
+)
+# OASIS_STOP
+

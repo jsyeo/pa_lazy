@@ -1,0 +1,27 @@
+OASISFormat: 0.3
+Name:        pa_lazy
+Version:     0.01
+Synopsis:    Lazy extension
+Authors:     Jason
+License:     MPL
+Plugins:     META (0.3)
+BuildDepends: camlp4.lib
+BuildTools:       ocamlbuild, camlp4o
+
+Library pa_lazy
+  Path: .
+  FindlibName: pa_lazy
+  Modules: Main
+  XMETAType: library
+
+Library pa_lazy_syntax
+  Path: syntax
+  Modules: Pa_lazy
+  FindLibParent: pa_lazy
+  FindlibName: syntax
+  BuildDepends: camlp4.lib,
+                camlp4.quotations,
+                compiler-libs.common
+  XMETAType: syntax
+  XMETARequires: compiler-libs.common, camlp4
+  XMETADescription: Syntax extension for laziness

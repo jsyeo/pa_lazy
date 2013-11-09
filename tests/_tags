@@ -1,0 +1,1 @@
+<streams.*>: syntax(camlp4o), package(pa_lazy.syntax), package(batteries)

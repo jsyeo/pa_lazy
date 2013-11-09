@@ -9,6 +9,7 @@ setup.data
 *.native
 *.byte
 *.out
+setup.ml
 
 #pa_debug files
 log.txt
